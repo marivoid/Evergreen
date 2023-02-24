@@ -1,0 +1,71 @@
+.no-arrow div.arrow {
+    display: block;
+}
+
+
+.overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    z-index: 10000;
+    overflow: auto;
+}
+
+.text {
+    color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+.link {
+    color: green;
+}
+
+.overlay-background {
+    background-color: rgb(27, 27, 27);
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed; 
+    top: 0%;
+    z-index: 999;
+}
+
+.show {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    max-width: 600px;
+    max-height: 280px;
+    height: 80%;
+    z-index: 1000;
+    text-align: center;
+    background-color: rgb(224, 222, 222);
+    border-radius: 30px;
+    /* ensures the message is in the middle of the screen */
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 680px){
+    .show {
+        max-height: 380px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .show {
+        max-height: 450px;
+    }
+
+    .title {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 5px;
+    }
+}

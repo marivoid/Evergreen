@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+
+        <title>Evergreen | Form</title>
+        
+        <!--favicon icon-->
+        <link rel="shortcut icon" type="image/png" href="./media/favicon.png"/>
+        
+        <!--Bulma and my css-->
+        <link rel="stylesheet" 
+               href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        
+        <link rel="stylesheet" 
+              href="./css/style.css">
+
+        <!--validation-->
+        <!-- <script  src="./js/validation/FormValidation.js"></script> -->
+
+    </head>
+    <body id="order">
+
+        <!--Navigation bar-->
+        <nav class="navbar is-white sticky">
+            <div class="navbar-brand">
+                <a class="navbar-item">
+                    <img src="./media/logo.png" alt="site logo" style="max-height: 70px" class="py-2 px-2">
+                </a>
+
+                <!--Hamburger menu-->
+                <a href="" class="navbar-burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+
+            <div class="navbar-menu" id="navLinks">
+                <div class="navbar-end px-4">
+                    <a href="./index.html" class="navbar-item">Home</a>
+                    <a href="./index.html#about-us" class="navbar-item">About us</a>
+                    <a href="./index.html#plants" class="navbar-item">Our plants</a>
+                    <a href="./index.html#form" class="navbar-item">Order now</a>
+                </div>
+            </div>
+        </nav>
+        <!--End of navbar-->
+
+        <!--Order and inputs-->
+        <div class="container">
+            <div class="columns is-variable mr-3 is-vcentered">
+                <div class="column is-size-6 mt-6 ml-5">
+                    <h4 class="is-size-1 is-size-2-mobile pb-3 mx-5 mb-5">The form</h4>    
+                    <!--Additional information-->
+                    <form class="control box p-5 mb-6" id="form-plant-name">
+                        
+                        <div id="left-form">
+                            <!--dynamic additional info-->
+                        </div>
+
+
+                        <!--submit and back buttons-->
+                        <a href="./index.html" class="button reset is-danger is-outlined mt-5">Back</a>
+                        <input type="submit" value="Submit" id="secondSubmit" class="button submit is-primary mt-5">
+
+                        <div id="errorContainer" class="d-flex flex-column"></div>
+                    </form><!--end of form-->    
+                        
+                </div>
+
+                <div class="column is-size-6 mt-6 ml-5">
+                    <!--Order information-->
+                    <h4 class="is-size-1 is-size-2-mobile pb-6 mx-5">Order information</h4>
+
+                    <div class="p-5 box mb-6">
+                        <fieldset> 
+                            <p class="mb-4 p-3">Thank you so much for considering Evergreen!
+                                We hope that you are satisfied with our plant friends. 
+                                Once submitted, we will notify you via email when your order
+                                is ready to be shipped.<br/>
+                                Before purchasing, please make sure you confirm your order details: 
+                            </p>       
+                            <!--dynamicly generated options that the user selected-->
+                            <div class="box" id="result">
+
+                            </div>
+                        </fieldset>
+                        <p class="my-4 p-3">We hope to see you again in the future! Once more 
+                            we would like to thank you for choosing Evergreen. We wish you the 
+                            best of luck in your plant life journey.
+                        </p> 
+                        
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <!--End of order and inputs-->
+
+        <!--Footer-->
+        <footer class="footer p-6">
+            <div class="columns">
+
+                <div class="column is-3 has-text-centered">
+                    <img src="./media/logo.png" alt="logo" class="small-logo mt-5">
+                    <h3 class="mt-2 is-size-6">Evergreen</h3>
+                    <p class="mt-5 has-text-weight-light">Everyone should live with<br> a little more green.</p>
+                </div>
+
+                <div class="column is-3 has-text-centered">
+                    <h2 class="mt-6 has-text-weight-semibold">Explore</h2>
+                    <div class="mt-4 has-text-weight-light links">
+                        <a href="./index.html">Home</a>
+                        <a href="./index.html#about-us" class="pt-2">About us</a>
+                        <a href="./index.html#plants" class="pt-2">Our plants</a>
+                        <a href="./index.html#form" class="pt-2">Order now</a>
+                    </div>
+                </div>
+
+                <div class="column is-3 has-text-centered">
+                    <h2 class="mt-6 has-text-weight-semibold">Contact</h2>
+                    <div class="mt-4 has-text-weight-light links">
+                        <p class="pt-3">1 Lomb Memorial Dr, Rochester</p>
+                        <p class="pt-2">NY 14623, USA</p>
+                        <p class="pt-2">evergreen@gmail.com</p>
+                        <p class="pt-2">+1-585-555-0152</p>
+                    </div>
+                </div>
+
+                <div class="column is-3 has-text-centered">
+                    <h2 class="mt-6 has-text-weight-semibold">Our Socials</h2>
+                    <div class="mt-4 has-text-weight-light links">
+                        <img src="media/fb2.png" alt="facebook logo" class="pt-3 socials">
+                        <img src="media/ig2.png" alt="instagram logo" class="px-3 socials">
+                        <img src="media/tw2.png" alt="twitter logo" class="socials">
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <div class="content has-text-centered links">
+                <p class="pt-4">Copyright &copy; 2022 Evergreen</p>
+                <p class="has-text-weight-light">Marina Mustac</p>
+            </div>
+        </footer>
+        <!--End of footer-->
+        
+
+        <script src="./js/hamburger-menu/hamburger-menu.js"></script>
+        <script src="js/app.js" type="module"></script>
+
+    </body>
+</html>
